@@ -1,38 +1,99 @@
-.App {
+body {
+  height: 100%;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form {
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.form-control input {
+  max-width: 145px;
+  margin-top: 10px;
+}
+
+.form input,
+.form button {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.form-control__date {
+  padding: 7px;
+}
+
+.form-control__distance, .form-control__button-ok {
+  padding: 10px;
+}
+
+.form-control__button-ok {
+  background-color: #ffffff;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.table th {
+  padding-bottom: 20px;
+
+  font-weight: 400;
+}
+
+.table th:first-child {
+  text-align: left;
+}
+
+.table th:first-child {
+  padding-left: 20px;
+}
+
+.table th:last-child {
+  padding-right: 20px;
+}
+
+.table tbody {
+  box-shadow: 0 0 0 1px black;
+  border-radius: 15px;
+}
+
+.tableRow a {
+  margin-right: 5px;
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.tableRow td:not(:first-child) {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tableRow td:first-child {
+  padding-left: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tableRow td:last-child {
+  padding-right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tableRow td {
+  padding-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tableRow:last-child td {
+  padding-bottom: 20px;
 }
